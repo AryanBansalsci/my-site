@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="hi.css">
+</head>
+<body>
+    <div class="header">
+        <h1>SpaceToEveryone</h1>
+        <p>the space expands so did our knowldge.</p>
+      </div>
+      <div class="navbar">
+  <a href="to.html">Learn</a>
+  <a href="testing2.html">home</a>
+  <a href="about.html">about.me</a>
+  <a href="contact.html" class="right">Contact us</a>
+</div>
+    <div id="pic">
+        <section>
+  <img class="mySlides" src="archives_helix.jpg" style="width:40%; top:100px;">
+  <img class="mySlides" src="veil.jpg" style="width:40%">
+  <img class="mySlides" src="sea.jpg" style="width:40%">
+</section>
+       <p> veil,helix,sea nebula</p>
+      
+
+    </div>
+      <div cx1lass="row">
+        <div class="side">...</div>
+        <div class="main">...</div>
+      </div>
+    <div class="footer">
+  <h2>Space anytime</h2>
+</div>
+    
+    <script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+      <style>
+          .header {
+    padding: 60px; 
+    text-align: center; 
+    background:blue;
+    color: white; 
+ height: 70px;
+  }
+  
+ 
+  .header h1 {
+    font-size: 60;
+
+  }
+  .navbar {
+    overflow: hidden; 
+    background-color: #333; 
+  }
+  
+  .navbar a {
+    float: left;
+    display: block; 
+    color: white; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+  }
+  
+ 
+  .navbar a.right {
+    float: right; 
+  }
+  
+  
+  .navbar a:hover {
+    background-color: #ddd; 
+    color: black; 
+  }
+           .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+          .footer {
+      
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+   
+
+
+      </style>
+
+</body>
+</html>
